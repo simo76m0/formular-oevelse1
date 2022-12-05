@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burger menu-øvelse</title>
+    <link rel="stylesheet" href="css/demo.css" />
+    <!-- Ret i nedenståendde stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="banner">
+      <div class="logo">
+        <a href="#0">Logo</a>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <header>
+          <h2>Kontakt os</h2>
+          <p>Udfyld kontaktformularen for at kontakte os. Vi glæder os til at høre fra dig.</p>
+        </header>
+
+        <form name="kontakt" netlify>
+          <!-- Formular-indhold -->
+          <div class="form-felt">
+            <label for="first-name">Fornavn</label>
+            <input id="first-name" name="firstname" type="text" />
+            <label for="last-name">Efternavn</label>
+            <input id="last-name" name="lastname" type="text" />
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" />
+            <h3>Er du studerende eller underviser?</h3>
+            <select name="rolle">
+              <option value="rolle">Vælg rolle</option>
+              <option value="studerende">Studerende</option>
+              <option value="underviser">Underviser</option>
+            </select>
+            <!-- <div class="form-control">
+              <input type="radio" id="studerende" name="interest" value="studerende" checked />
+              <label for="rolle">Studerende</label>
+              <div class="form-control">
+                <input type="rolle" id="underviser" name="interest" value="underviser" />
+                <label for="status">Underviser</label> -->
+            <h3>Tilføj besked her</h3>
+            <textarea name="Indtast besked her" id="besked" cols="30" rows="10"></textarea>
+            <button>Indsend</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
